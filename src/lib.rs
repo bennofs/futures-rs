@@ -202,10 +202,13 @@ if_std! {
     mod task_impl2;
     mod stack;
 
-    pub mod task;
     pub mod executor;
+    pub mod task;
     pub mod sync;
     pub mod unsync;
+
+    pub mod executor2;
+    pub mod task2;
 
     #[doc(hidden)]
     #[deprecated(since = "0.1.4", note = "use sync::oneshot::channel instead")]
